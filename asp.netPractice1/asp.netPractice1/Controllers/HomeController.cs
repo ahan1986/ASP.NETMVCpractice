@@ -8,6 +8,7 @@ using asp.netPractice1.Models;
 
 namespace asp.netPractice1.Controllers
 {
+
     public class HomeController : Controller
     {
         public IActionResult Index()
@@ -41,3 +42,9 @@ namespace asp.netPractice1.Controllers
         }
     }
 }
+
+/* NOTES: 
+ * IActionResult is a 'view'.  The individual methods will return an IActionResult 'view'.  But right now in the beginning, it doesnt say which view to return. 
+ * the 'HomeController' will go into the 'Home' folder. AND the method name Index() or About() or Contact() will be the file it returns from.
+ * the process of doing this is called an Action. The result of the ActionResult is to display the View. In this case ust display the index.cshtml page. 
+ */
