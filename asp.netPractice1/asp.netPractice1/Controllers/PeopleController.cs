@@ -15,5 +15,15 @@ namespace asp.netPractice1.Controllers
         {
             return View();
         }
+
+        public IActionResult ListPeople() {
+            List<Models.PersonModel> people = new List<Models.PersonModel>();
+
+            people.Add(new Models.PersonModel { FirstName = "Andrew", LastName = "Han", Age = 31 });
+            people.Add(new Models.PersonModel { FirstName = "bob", LastName = "Dole", Age = 54 });
+            people.Add(new Models.PersonModel { FirstName = "Jack", LastName = "Johnson", Age = 68 });
+
+            return View();
+        }
     }
 }
